@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SensorPulse</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SensorPulse</h1>
+    <span id="conn" class="badge off">disconnected</span>
+  </header>
+
+  <main>
+    <section class="cards" id="cards"></section>
+    <section class="panel"><canvas id="chart" height="110"></canvas></section>
+    <section class="panel">
+      <h2>Anomaly log</h2>
+      <ul id="log"><li class="muted">No anomalies yet.</li></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
